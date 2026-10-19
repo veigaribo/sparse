@@ -374,7 +374,7 @@ deeper:
 
 	case SYM_ENUM:
 		prepend(name, "enum %s ", show_ident(sym->ident));
-		break;
+		goto out;
 
 	case SYM_NODE:
 		if (sym->ident)
